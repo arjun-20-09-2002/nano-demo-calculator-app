@@ -7,6 +7,7 @@ int main()
   crow::SimpleApp app;
   CROW_ROUTE(app, "/calculator/greeting")
       .methods("GET"_method)(&greet);
+      printf("Arjun");
   CROW_ROUTE(app, "/calculator/add")
       .methods("POST"_method)(&add);
   CROW_ROUTE(app, "/calculator/subtract")
